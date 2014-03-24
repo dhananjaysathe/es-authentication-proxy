@@ -8,6 +8,11 @@ Put elasticsearch behind Google OAuth2, Basic Authentication or CAS Authenticati
 - Enhanced authentication methods. Supports Google OAuth2, BasicAuth(multiple users supported) and CAS Authentication for the clients
 - Inspired by and based on [kibana-authentication-proxy](https://github.com/fangli/kibana-authentication-proxy), most of the proxy libraries were written by them, thanks:)
 
+Usage
+====
+Proxy [Search Uri](http://www.elasticsearch.org/guide/en/elasticsearch/reference/master/search-uri-request.html) requests using advanced authentication.
+Potentailly useful for cases where an authenticated user could use calls via elasticsearch.js or ajax and hit your database in a secure way using single sign on or oauth.
+
 
 Installation
 =====
@@ -90,6 +95,9 @@ Releases
 ========
 - Initial
 
+ToDo
+=======
+Potentially block functions like deleteion of indices etc.
 
 License
 =======
